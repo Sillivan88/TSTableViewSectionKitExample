@@ -12,7 +12,37 @@
 		E991ACFB1FE404D10047C212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E991ACF91FE404D10047C212 /* Main.storyboard */; };
 		E991ACFD1FE404D10047C212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E991ACFC1FE404D10047C212 /* Assets.xcassets */; };
 		E991AD001FE404D10047C212 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E991ACFE1FE404D10047C212 /* LaunchScreen.storyboard */; };
+		E991AD361FE4061A0047C212 /* TSTableViewSectionKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E991AD341FE4061A0047C212 /* TSTableViewSectionKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E991AD391FE4061A0047C212 /* TSTableViewSectionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E991AD321FE4061A0047C212 /* TSTableViewSectionKit.framework */; };
+		E991AD3A1FE4061A0047C212 /* TSTableViewSectionKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E991AD321FE4061A0047C212 /* TSTableViewSectionKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E991AD411FE406910047C212 /* TSTableViewActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E991AD3E1FE406910047C212 /* TSTableViewActionCell.swift */; };
+		E991AD421FE406910047C212 /* TSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E991AD3F1FE406910047C212 /* TSTableViewController.swift */; };
+		E991AD431FE406910047C212 /* TSTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E991AD401FE406910047C212 /* TSTableViewSection.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E991AD371FE4061A0047C212 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E991ACEA1FE404D10047C212 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E991AD311FE4061A0047C212;
+			remoteInfo = TSTableViewSectionKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E991AD2C1FE405D30047C212 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E991AD3A1FE4061A0047C212 /* TSTableViewSectionKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E991ACF21FE404D10047C212 /* TSTableViewSectionKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSTableViewSectionKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +52,24 @@
 		E991ACFC1FE404D10047C212 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E991ACFF1FE404D10047C212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E991AD011FE404D10047C212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E991AD321FE4061A0047C212 /* TSTableViewSectionKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TSTableViewSectionKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E991AD341FE4061A0047C212 /* TSTableViewSectionKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTableViewSectionKit.h; sourceTree = "<group>"; };
+		E991AD351FE4061A0047C212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E991AD3E1FE406910047C212 /* TSTableViewActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSTableViewActionCell.swift; sourceTree = "<group>"; };
+		E991AD3F1FE406910047C212 /* TSTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSTableViewController.swift; sourceTree = "<group>"; };
+		E991AD401FE406910047C212 /* TSTableViewSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSTableViewSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E991ACEF1FE404D10047C212 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E991AD391FE4061A0047C212 /* TSTableViewSectionKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E991AD2E1FE4061A0047C212 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				E991ACF41FE404D10047C212 /* TSTableViewSectionKitExample */,
+				E991AD071FE404E10047C212 /* Frameworks */,
 				E991ACF31FE404D10047C212 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				E991ACF21FE404D10047C212 /* TSTableViewSectionKitExample.app */,
+				E991AD321FE4061A0047C212 /* TSTableViewSectionKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,7 +110,38 @@
 			path = TSTableViewSectionKitExample;
 			sourceTree = "<group>";
 		};
+		E991AD071FE404E10047C212 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E991AD331FE4061A0047C212 /* TSTableViewSectionKit */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		E991AD331FE4061A0047C212 /* TSTableViewSectionKit */ = {
+			isa = PBXGroup;
+			children = (
+				E991AD341FE4061A0047C212 /* TSTableViewSectionKit.h */,
+				E991AD3F1FE406910047C212 /* TSTableViewController.swift */,
+				E991AD401FE406910047C212 /* TSTableViewSection.swift */,
+				E991AD3E1FE406910047C212 /* TSTableViewActionCell.swift */,
+				E991AD351FE4061A0047C212 /* Info.plist */,
+			);
+			path = TSTableViewSectionKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E991AD2F1FE4061A0047C212 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E991AD361FE4061A0047C212 /* TSTableViewSectionKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		E991ACF11FE404D10047C212 /* TSTableViewSectionKitExample */ = {
@@ -74,15 +151,35 @@
 				E991ACEE1FE404D10047C212 /* Sources */,
 				E991ACEF1FE404D10047C212 /* Frameworks */,
 				E991ACF01FE404D10047C212 /* Resources */,
+				E991AD2C1FE405D30047C212 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E991AD381FE4061A0047C212 /* PBXTargetDependency */,
 			);
 			name = TSTableViewSectionKitExample;
 			productName = TSTableViewSectionKitExample;
 			productReference = E991ACF21FE404D10047C212 /* TSTableViewSectionKitExample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E991AD311FE4061A0047C212 /* TSTableViewSectionKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E991AD3B1FE4061A0047C212 /* Build configuration list for PBXNativeTarget "TSTableViewSectionKit" */;
+			buildPhases = (
+				E991AD2D1FE4061A0047C212 /* Sources */,
+				E991AD2E1FE4061A0047C212 /* Frameworks */,
+				E991AD2F1FE4061A0047C212 /* Headers */,
+				E991AD301FE4061A0047C212 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TSTableViewSectionKit;
+			productName = TSTableViewSectionKit;
+			productReference = E991AD321FE4061A0047C212 /* TSTableViewSectionKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +192,10 @@
 				ORGANIZATIONNAME = "Thomas Sillmann";
 				TargetAttributes = {
 					E991ACF11FE404D10047C212 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					E991AD311FE4061A0047C212 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,6 +215,7 @@
 			projectRoot = "";
 			targets = (
 				E991ACF11FE404D10047C212 /* TSTableViewSectionKitExample */,
+				E991AD311FE4061A0047C212 /* TSTableViewSectionKit */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +231,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E991AD301FE4061A0047C212 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -136,12 +245,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E991AD421FE406910047C212 /* TSTableViewController.swift in Sources */,
 				E991ACF81FE404D10047C212 /* ViewController.swift in Sources */,
+				E991AD431FE406910047C212 /* TSTableViewSection.swift in Sources */,
 				E991ACF61FE404D10047C212 /* AppDelegate.swift in Sources */,
+				E991AD411FE406910047C212 /* TSTableViewActionCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E991AD2D1FE4061A0047C212 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E991AD381FE4061A0047C212 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E991AD311FE4061A0047C212 /* TSTableViewSectionKit */;
+			targetProxy = E991AD371FE4061A0047C212 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E991ACF91FE404D10047C212 /* Main.storyboard */ = {
@@ -277,6 +404,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2S49FR3REP;
 				INFOPLIST_FILE = TSTableViewSectionKitExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.thomassillmann.TSTableViewSectionKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,11 +420,62 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2S49FR3REP;
 				INFOPLIST_FILE = TSTableViewSectionKitExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.thomassillmann.TSTableViewSectionKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E991AD3C1FE4061A0047C212 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2S49FR3REP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Frameworks/TSTableViewSectionKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.thomassillmann.TSTableViewSectionKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E991AD3D1FE4061A0047C212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2S49FR3REP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Frameworks/TSTableViewSectionKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.thomassillmann.TSTableViewSectionKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -317,6 +496,15 @@
 			buildConfigurations = (
 				E991AD051FE404D10047C212 /* Debug */,
 				E991AD061FE404D10047C212 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E991AD3B1FE4061A0047C212 /* Build configuration list for PBXNativeTarget "TSTableViewSectionKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E991AD3C1FE4061A0047C212 /* Debug */,
+				E991AD3D1FE4061A0047C212 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
